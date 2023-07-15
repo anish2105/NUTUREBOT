@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NurtureBot</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>NURTUREBOT</h1>
+    <div id="chat-container">
+        <div id="chat-display">
+            <div class="message incoming">
+                <div class="message-content">
+                    <span class="message-text">Hello, Hope you are doing great!!!</span>
+                </div>
+            </div>
+        </div>
+        <div id="chat-input">
+            <input type="text" id="question-input" name="question" placeholder="Type a message...">
+            <button id="submit-btn">Send</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

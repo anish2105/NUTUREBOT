@@ -1,0 +1,93 @@
+/* Updated CSS styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    background-image: url("galazy2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+#chat-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+#chat-display {
+    height: 400px;
+    overflow-y: scroll;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.message.incoming .message-content {
+    background-color: #ffffff;
+    margin-right: auto;
+    border-radius: 15px 15px 15px 0;
+}
+
+.message.outgoing .message-content {
+    background-color: #4caf50;
+    color: #ffffff;
+    margin-left: auto;
+    border-radius: 15px 15px 0 15px;
+}
+
+.message-content {
+    padding: 8px 15px;
+    max-width: 90%;
+    text-align: justify; /* Add text alignment */
+}
+
+.message-text {
+    font-size: 14px;
+    color: #000000;
+}
+
+#chat-input {
+    display: flex;
+    align-items: center;
+}
+
+#chat-input input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000000;
+    outline: none;
+}
+
+#chat-input button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    background-color: #4caf50;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#chat-input button:hover {
+    background-color: #45a049;
+}
